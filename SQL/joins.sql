@@ -65,8 +65,7 @@ SELECT * FROM marks;
 
 SELECT students.name,marks.subject,marks.score from students inner join marks on students.id=marks.student_id; 
 
--- INNER JOIN returns only matching rows based on a condition.
--- CROSS JOIN returns ALL possible combinations (no condition)
+
 -- Combine students table with marks table,Students without marks will NOT appear.in inner join from doesnot matters,displays only data present in the
 -- both the tables 
 
@@ -77,4 +76,7 @@ SELECT students.name,marks.subject,marks.score from students left join marks on 
 SELECT students.name,marks.subject,marks.score from students right join marks on students.id=marks.student_id;
 
 SELECT students.name,marks.subject,marks.score from students cross join marks;
+
+-- INNER JOIN returns only matching rows based on a condition.
+-- CROSS JOIN returns ALL possible combinations (no condition)
 																									
