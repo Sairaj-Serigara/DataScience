@@ -1,0 +1,3 @@
+model.dat
+*.dat     #ignore all .dat files
+ignore_files/ #ignore whole folder
